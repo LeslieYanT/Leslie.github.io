@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="">
+  <meta name="author" content="chenxiang">
+  <meta name="keywords" content="Blog">
+  <title>新建文本文档 - TheSakura&#39;s Blog</title>
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+  
+
+  
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_yg9cfy8wd6.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_pjno9b9zyxs.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+
+  <script  src="/js/utils.js" ></script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>thesakura</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="view intro-2" id="background" parallax=true
+         style="background: url('/img/default.png') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              
+  <div class="mt-3 post-meta">
+    <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+    <time datetime="2020-08-09 22:57">
+      2020年8月9日 晚上
+    </time>
+  </div>
+
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      2.9k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      31
+       分钟
+    </span>
+  
+
+  
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="container nopadding-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <div class="post-content mx-auto" id="post">
+            
+            <article class="markdown-body">
+              <h2 id="一、什么是AB测试？"><a href="#一、什么是AB测试？" class="headerlink" title="一、什么是AB测试？"></a>一、什么是AB测试？</h2><p>A/B 测试是一种产品优化方法；为同一个优化目标制定两个方案，让同一部分用户中的一部分用户命中 A 方案，同时另一部分用户命中 B 方案，统计并比较不同方案的点击率、转化率等数据指标，通过不同方案的数据表现，在确定数据表现通过假设检验后，决定最终方案的实验方法。<br><img src="https://img-blog.csdnimg.cn/20200808234801432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYyNTM4MA==,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
+<h2 id="二、AB测试的意义？"><a href="#二、AB测试的意义？" class="headerlink" title="二、AB测试的意义？"></a>二、AB测试的意义？</h2><p>AB测试是支持数据决策最有力的工具。</p>
+<p>以下为最基础的数据驱动流程，方案验证即为AB测试过程，实验才是检验真理的唯一标准。</p>
+<ul>
+<li>数据收集</li>
+<li>数据分析</li>
+<li>发现问题</li>
+<li>提出方案</li>
+<li>方案验证</li>
+<li>发布上线</li>
+</ul>
+<h2 id="三、AB测试实验需要满足以下两个特性"><a href="#三、AB测试实验需要满足以下两个特性" class="headerlink" title="三、AB测试实验需要满足以下两个特性"></a>三、AB测试实验需要满足以下两个特性</h2><h3 id="1-同时性"><a href="#1-同时性" class="headerlink" title="1. 同时性"></a>1. 同时性</h3><p>两个策略是同时投入使用的，而不是AB两种策略分先后上线，这样会有其他因素影响。</p>
+<h3 id="2-同质性"><a href="#2-同质性" class="headerlink" title="2. 同质性"></a>2. 同质性</h3><p>两个策略对应的使用群体需要保证尽量一致。</p>
+<h2 id="四、AB测试实验详解"><a href="#四、AB测试实验详解" class="headerlink" title="四、AB测试实验详解"></a>四、AB测试实验详解</h2><h3 id="1-流量分配规则：正交与互斥"><a href="#1-流量分配规则：正交与互斥" class="headerlink" title="1. 流量分配规则：正交与互斥"></a>1. 流量分配规则：正交与互斥</h3><p>（1）正交实验</p>
+<p>每个独立实验为一层，一份流量穿越每层实验时，都会随机打散再重组，保证每层流量数量相同。<br><img src="https://img-blog.csdnimg.cn/20200808235337448.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYyNTM4MA==,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
+<p>（2）互斥实验</p>
+<p>实验在同一层拆分流量，不论如何拆分，不同组的流量是不重叠的。<br><img src="https://img-blog.csdnimg.cn/20200808235359997.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYyNTM4MA==,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
+<p>（3）什么情况下正交、互斥分配流量？</p>
+<p>我们刚刚就用的正交流量分配方式，导致了错误的数据结果，如果那个实验我们用互斥的流量分配方法就完美的解决了这个问题。</p>
+<p>AB测试实验中，<strong>两个或多个实验内容相互影响则选择互斥方法分配流量，两个或多个实验内容不会相互影响则选择正交方法分配流量。</strong></p>
+<ul>
+<li>正交：可以节省流量；</li>
+<li>互斥：可以让耦合的实验完美剥离开来不互相影响。</li>
+</ul>
+<p>（4）举个例子</p>
+<p>在详情页面上做两个实验：</p>
+<p>其中一个是转化按钮颜色的AB测试实验；<br>另外一个是转化按钮文案的AB测试实验。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200808235451311.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYyNTM4MA==,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
+<p>如果我们使用正交分配流量的方式会出现什么情况呢？</p>
+<p>也就是流量同时命中实验一与实验二，最后展现在用户面前的就是如下图四种情况，这种情况我们是无法统计出准确的数据结果的，因为已经违背了单一变量原则。</p>
+<p>这种最好使用互斥来分配流量，一部分用户命中实验一、另一部分用户命中实验二。<br><img src="https://img-blog.csdnimg.cn/20200808235526580.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYyNTM4MA==,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
+<h3 id="2-AB测试系统实验架构"><a href="#2-AB测试系统实验架构" class="headerlink" title="2. AB测试系统实验架构"></a>2. AB测试系统实验架构</h3><p>AB测试系统实验架构包括：<strong>应用层-实验层-策略层</strong>。</p>
+<p>（1）应用层</p>
+<p>应用层级别最好，应用层与应用层之间的流量是正交的。</p>
+<p>（2）实验层</p>
+<p>实验层是应用层子层，实验层与实验层之间的流量是互斥的。</p>
+<p>（3）策略层</p>
+<p>策略层是实验层子层，一个实验可以有多个策略，多个策略之间流量相互不影响。</p>
+<p>举个例子：</p>
+<p>应用：App客户端；<br>实验：购买按钮颜色；<br>策略：红色、橘色。</p>
+<h3 id="3-创建实验"><a href="#3-创建实验" class="headerlink" title="3. 创建实验"></a>3. 创建实验</h3><p>创建实验时一般先设置好实验条件和统计指标</p>
+<p><strong>实验条件</strong>：AB测试系统可以对一些条件的用户进行限制，城市、年级、新老用户、版本号、平台（ios、android、h5）。这里我们完全可以直接引入用户画像系统直接进行人群定向取做AB测试实验。传送门：<a href="https://zhuanlan.zhihu.com/p/79685767" target="_blank" rel="noopener">斑马：用户画像从搭建到应用实战</a></p>
+<p>这个功能主要是针对满足这样实验条件的用户进行分流，如不满足这些条件则不分流，直接命中默认策略。默认策略是我们在创建策略时勾选的，如果用户不满足条件命中默认策略，这些用户产生的数据是不参与计算的，也就不会影响实验结果。<br><img src="https://img-blog.csdnimg.cn/20200808235902240.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYyNTM4MA==,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
+<p><strong>（1）城市、年级、新老用户</strong></p>
+<p>这几个条件很好理解，就是指用户所在城市、年级、新老，但需要用户登录才能拿到这样的信息。</p>
+<p>如果设定了实验条件，用户处于非登录态怎么办呢？</p>
+<p>非登录态的用户我们认为他是不满足实验条件的，所以会走默认策略，这样会避免一些不满足实验条件的用户却命中实验的可能。但为了保证同一个用户在登入登出看到的页面是相同的，所以这部分人即使登录后也会走默认策略。</p>
+<p>但不是全部未登录用户都会这样，我们判断当前时间与未登录用户刚登录的时间点的差值是否大于两天。</p>
+<p>如果大于两天我们会让他命中实验，进行分流，这样也是为了保证每天下载的大量用户也会命中AB测试的情况，达到一个平衡的状态。</p>
+<p><img src="https://img-blog.csdnimg.cn/20200809000000294.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYyNTM4MA==,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
+<p><strong>（2）适用版本</strong></p>
+<p>这里的版本是针对客户端的AB测试提供的功能。</p>
+<p>比如：Ios 在1.0.1 版本，Android在1.0.2版本上线一个AB测试实验。</p>
+<p>如果不绑定版本号会出现什么情况？</p>
+<p>因为版本发布，除强制升级外，用户还处于老版本。对于老版本的用户也会命中实验，但是这些用户并没有看到不同的策略，就会出现，AB测试系统分给用户A策略，但是用户看到的是B策略，最终影响数据准确性。</p>
+<p>版本号设置会向上兼容，也就是说只有此版本号，或者高于此版本的用户才能命中实验。</p>
+<p><strong>（3）平台</strong></p>
+<p>平台分为3种，分别为：IOS客户端、Android客户端、JS（H5）</p>
+<p>分别针对不同的平台进行的AB测试。</p>
+<p>这里不说Ios和Android，只说一下H5，因为H5的埋点上报与客户端不一样，H5 的分流的唯一ID也与客户端不一样。客户端的分流使用的ID是设备ID，H5则是cookieID</p>
+<p><strong>统计指标：</strong></p>
+<p>（1）对于AB两个策略上线后，我们需要跟踪两个策略的数据效果</p>
+<p>这两个策略的效果数据来源就是页面的浏览与按钮的点击两个埋点事件来提供数据支持的。比如：客户端需要对课程详情页的报名按钮样式进行AB测试实验，数据监控的时候我们就需要统计进入详情页的人数与报名按钮点击uv进行统计。</p>
+<p>以报名按钮uv/详情页uv此数值来统计报名按钮样式的AB两种策略效果，那么在创建实验时就需要确定统计指标，确定指标后就需要确定实验所需要哪些埋点指标统计。这里就需要详情页uv以及报名按钮uv两个埋点事件</p>
+<p>当然还有更负责的数据指标，但都可以通过埋点数据上报来进行统计。</p>
+<p>（2）计算方式</p>
+<p>假设一个漏斗中包含了 A、B、C、D、E 五个步骤，选择的时间范围是 2015 年 1 月 1 日到 2015 年 1 月 3 日，窗口期是 1 天。那么，如果用户在2015年1月1日到2015年1月3日触发了步骤 A，并且在步骤 A 发生的 1 天内，依顺序依次触发了 B、C、D、E，则视作该用户完成了一次成功的漏斗转化。</p>
+<p>在这个过程中，如果穿插了一些其它的步骤或者行为，例如在满足时间限制的情况下，用户的行为顺序是 A &gt; X &gt; B &gt; X &gt; C &gt; D &gt; X &gt; E，X 代表任意一个事件，则该用户依然视作完成了一次成功的漏斗转化。</p>
+<p>如果该用户在这个事件限制范围内，依次触发了 A &gt; B &gt; C &gt; E，则该用户没有完成该漏斗的转化，并且会被记作步骤 C 的流失用户。</p>
+<p>考虑一个更复杂的情况，如果一个用户在所选时段内有多个事件都符合某个转化步骤的定义，那么会优先选择更靠近最终转化目标的事件作为转化事件，并在第一次达到最终转化目标时停止转化的计算。</p>
+<p>假设一个漏斗的步骤定义是：访问首页、选择支付方式、支付成功，那么不同用户的行为序列及实际转化步骤（标记部分）见如下例子：</p>
+<ul>
+<li>例 1：==访问首页== -&gt; 选择支付方式（支付宝） -&gt; ==选择支付方式（微信）==-&gt; ==支付成功==。</li>
+<li>例 2：==访问首页== -&gt; 选择支付方式（支付宝） -&gt; 访问首页 -&gt; ==选择支付方式（微信）==-&gt; ==支付成功==。</li>
+<li>例 3：==访问首页== -&gt; 选择支付方式（支付宝） -&gt; 访问首页 -&gt; ==选择支付方式（微信）==-&gt;== 支付成功== -&gt; 选择支付方式（微信）-&gt; 支付成功。</li>
+</ul>
+<h2 id="五、分流引擎"><a href="#五、分流引擎" class="headerlink" title="五、分流引擎"></a>五、分流引擎</h2><p>分流策略：简单的理解就是哪些用户会命中策略A，哪些用户会命中策略B。</p>
+<p>在说分流策略之前先举个例子，配合例子更好理解。</p>
+<p>假设报名按钮颜色实验分50%流量，策略“红色”按钮分流量40%，策略“蓝色”按钮分流量60%</p>
+<p>例如：取模10000，那报名按钮颜色实验的数字区间为0-5000；10000*50%。</p>
+<p>策略“红色”按钮数字区间为0-2000；5000*40%。</p>
+<p>策略“蓝色”按钮数字区间为2000-5000；2000+5000*60%。</p>
+<p>现在我们对用户唯一id，应用id进行哈希。哈希后得到一个数字，这个数字落到哪个数字区间就将用户分到哪个策略中去。经测试10w次分流，8s，流量diff在1%以内，每个应用分到的用户正交，不相互影响。</p>
+<p>如图：<br><img src="https://img-blog.csdnimg.cn/2020080900043950.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYyNTM4MA==,size_16,color_FFFFFF,t_70" srcset="/img/loading.gif" alt="在这里插入图片描述"></p>
+<h2 id="六、对接方式"><a href="#六、对接方式" class="headerlink" title="六、对接方式"></a>六、对接方式</h2><p>AB测试系统和App服务端或H5服务端对接</p>
+<p>分别有两个接口：一个是策略请求接口、一个是埋点接口。</p>
+<p>（1）埋点接口</p>
+<p>AB测试系统将接口参数传给服务端，服务端将参数传给客户端和H5前端。</p>
+<p>客户端或者前端遍历这些 eventids（埋点事件id）如果有用户命中这些埋点事件则上百 abtestid key及值。</p>
+<p>（2）策略接口</p>
+<p>例如实验是客户端报名按钮“红色”、“蓝色”。</p>
+<p>当流量进入到客户端后， 客户端向服务端询问：我这有俩颜色的按钮，我要展示哪个颜色的按钮啊？</p>
+<p>服务端：我暂时也不知道，我帮你问问AB测试服务。</p>
+<p>服务端问AB测试服务：客户端来流量了，有两个颜色的按钮，需要展示哪个颜色的按钮啊？</p>
+<p>AB测试服务：展示“红色”按钮。</p>
+<p>服务端：我知道了，并告诉客户端：展示“红色”按钮。</p>
+<p>客户端：我知道了，客户端展示“红色”报名按钮。</p>
+<h2 id="七、AB测试效果分析"><a href="#七、AB测试效果分析" class="headerlink" title="七、AB测试效果分析"></a>七、AB测试效果分析</h2><p>AB测试是典型的通过样本数据估计总体数据效果的方法，所以为了避免出现小概率错误，我们需要对AB测试的结果进行假设检验。</p>
+
+            </article>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                
+              </div>
+              
+                <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" target="_blank" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！</p>
+              
+              
+                <div class="post-prevnext row">
+                  <div class="post-prev col-6">
+                    
+                    
+                  </div>
+                  <div class="post-next col-6">
+                    
+                    
+                  </div>
+                </div>
+              
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div id="tocbot"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+
+    
+  </main>
+
+  
+    <a id="scroll-top-button" href="#" role="button">
+      <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  
+
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <div>
+      <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a>
+      <i class="iconfont icon-love"></i>
+      <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener">
+        <span>Fluid</span></a>
+    </div>
+    
+
+    
+
+    
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script  src="https://cdn.staticfile.org/jquery/3.4.1/jquery.min.js" ></script>
+<script  src="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/js/bootstrap.min.js" ></script>
+<script  src="/js/debouncer.js" ></script>
+<script  src="/js/main.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/lazyload.js" ></script>
+  
+
+
+
+  <script defer src="https://cdn.staticfile.org/clipboard.js/2.0.6/clipboard.min.js" ></script>
+  <script  src="/js/clipboard-use.js" ></script>
+
+
+
+
+
+
+
+  <script  src="https://cdn.staticfile.org/tocbot/4.11.1/tocbot.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      var boardCtn = $('#board-ctn');
+      var boardTop = boardCtn.offset().top;
+
+      tocbot.init({
+        tocSelector: '#tocbot',
+        contentSelector: 'article.markdown-body',
+        headingSelector: 'h1,h2,h3,h4,h5,h6',
+        linkClass: 'tocbot-link',
+        activeLinkClass: 'tocbot-active-link',
+        listClass: 'tocbot-list',
+        isCollapsedClass: 'tocbot-is-collapsed',
+        collapsibleClass: 'tocbot-is-collapsible',
+        collapseDepth: 0,
+        scrollSmooth: true,
+        headingsOffset: -boardTop
+      });
+      if ($('.toc-list-item').length > 0) {
+        $('#toc').css('visibility', 'visible');
+      }
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/typed.js/2.0.11/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "新建文本文档&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      searchFunc(path, 'local-search-input', 'local-search-result');
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script  src="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+  <script>
+    $('#post img:not(.no-zoom img, img[no-zoom]), img[zoom]').each(
+      function () {
+        var element = document.createElement('a');
+        $(element).attr('data-fancybox', 'images');
+        $(element).attr('href', $(this).attr('src'));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript">
+      //定义获取词语下标
+      var a_idx = 0;
+      jQuery(document).ready(function ($) {
+        //点击body时触发事件
+        $("body").click(function (e) {
+          //需要显示的词语
+          var a = new Array("富强", "民主", "文明", "和谐", "自由", "平等", "公正", "法治", "爱国", "敬业", "诚信", "友善");
+          //设置词语给span标签
+          var $i = $("<span/>").text(a[a_idx]);
+          //下标等于原来下标+1  余 词语总数
+          a_idx = (a_idx + 1) % a.length;
+          //获取鼠标指针的位置，分别相对于文档的左和右边缘。
+          //获取x和y的指针坐标
+          var x = e.pageX, y = e.pageY;
+          //在鼠标的指针的位置给$i定义的span标签添加css样式
+          $i.css({
+            "z-index": 999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": rand_color()
+          });
+          // 随机颜色
+          function rand_color() {
+            return "rgb(" + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + "," + ~~(255 * Math.random()) + ")"
+          }
+          //在body添加这个标签
+          $("body").append($i);
+          //animate() 方法执行 CSS 属性集的自定义动画。
+          //该方法通过CSS样式将元素从一个状态改变为另一个状态。CSS属性值是逐渐改变的，这样就可以创建动画效果。
+          //详情请看http://www.w3school.com.cn/jquery/effect_animate.asp
+          $i.animate({
+            //将原来的位置向上移动180
+            "top": y - 180,
+            "opacity": 0
+            //1500动画的速度
+          }, 1500, function () {
+            //时间到了自动删除
+            $i.remove();
+          });
+        });
+      })
+      ;
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>
